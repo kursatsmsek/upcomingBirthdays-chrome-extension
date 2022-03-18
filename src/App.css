@@ -1,40 +1,272 @@
 .App {
   text-align: center;
+  width: 30em;
+  height: 40em;
+  background-color: #398AB9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 150px;
-  min-width: 150px;
-  padding: 30px;
+.popupHeader {
+  width: 100%;
+  height: 15%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.popupLogo {
+  height: 80%;
+  margin-left: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.popupLogo img {
+  width: 100%;
+  height: 100%;
+}
+
+.popupTitle {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.popupAdd {
+  margin-right: 2%;
+  font-size: 1.7em;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.popupAddSvg:hover {
+  cursor: pointer;
+  fill: black;
+}
+
+.today {
+  width: 100%;
+  height: 85%;
+  overflow: scroll;
+}
+
+.popupCardDiv {
+  width: 97%;
+  height: 15%;
+  background-color: #ffffff8e;
+  border: 1px solid white;
+  margin: 0.3em;
+  margin-top: 0.1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.popupCardDivToday {
+  width: 97%;
+  height: 15%;
+  background-color: #cdb699;
+  border: 1px solid white;
+  margin: 0.3em;
+  margin-top: 0.1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.popupAvatarDiv {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popupNameDiv {
+  width: 50%;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.popupName {
+  display: flex;
+  margin-bottom: 3%;
+}
+
+.popupAccountsDiv {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
+}
+
+.popupInfoDiv {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.popupAccounts {
+  height: 50%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.popupAccounts svg {
+  margin-right: 3%;
+}
+
+.popupAccounts svg:hover {
+  fill: white;
+  cursor: pointer;
+}
+
+.popupAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.addPersonDiv {
+  width: 100%;
+  height: 100%;
+}
+
+.addPersonInfo {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addPersonCalendar {
+  width: 100%;
+  height: 60%;
+  background-color: rgb(73, 55, 139);
+}
+
+.addPersonSocial {
+  width: 100%;
+  height: 15%;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.socialInput {
+  padding: 3%;
+  margin-left: 2%;
+  border: none;
+  width: 86px;
+}
+
+.addPersonButtons {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.addPersonAddPhoto {
+  font-size: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  color: white;
+}
+
+.addPersonAddPhoto svg:hover {
+  fill: black;
+  cursor: pointer;
+}
+
+.addPersonNameInput {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.addPersonInput {
+  width: 70%;
+  padding: 10%;
+  border: none;
+}
+
+.submitButton {
+  padding: 3%;
+  border: none;
+  background: rgb(0, 238, 255);
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.submitButton:hover {
+  background: rgb(0, 225, 241);
+  cursor: pointer;
+}
+
+.cancelButton {
+  padding: 3%;
+  border: none;
+  background: rgb(255, 51, 0);
+  color: white;
+  border-radius: 3px;
+}
+
+.cancelButton:hover {
+  background: rgb(243, 20, 20);
+  cursor: pointer;
+}
+
+._2WxJS {
+  color: black !important;
+}
+
+._1m64i {
+  display: flex;
+  width: 20%;
+  margin-left: 2%;
+  padding: 2%;
+  font-weight: 700;
+  font-size: 16px;
+  justify-content: center;
+}
+
+._3ec3A {
+  width: 60% !important;
+  display: flex;
+  align-items: center;
+  padding: 2%;
+  font-weight: 700;
+  font-family: Courier;
+  font-size: 1.5em;
+  justify-content: center;
+}
+
+._1UuYB {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 2%;
+  width: 20% !important;
 }
